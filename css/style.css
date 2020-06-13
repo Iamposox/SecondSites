@@ -1,0 +1,355 @@
+button, a{
+  outline:0;
+  outline-offset:0;
+  border:0;
+}
+@font-face {
+  font-family: 'MasonChronicles';
+  src: url('../fonts/MasonChronicles.woff') format('woff'),
+       url('../fonts/MasonChronicles.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  background-color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #FFFFFF;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../img/Фон/yuyu.jpg);
+  background-repeat: no-repeat;
+  background-position: top right 50%;
+}
+.container{
+  width: 95%;
+  max-width: 100%;
+  margin: auto;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin-bottom: 90px;
+}
+.logo{
+  height: 100px;
+}
+.second-content{
+  display: flex;
+  flex-direction: column;
+}
+.second-content div{
+  margin-bottom: 150px;
+}
+.ellipses{
+  margin:0 auto;
+  display: flex;
+}
+.ellipses a{
+  margin-left: 120px;
+}
+.play p{
+  text-align: center;
+  margin-top: 5px;
+  text-decoration: none;
+}
+.play{
+  justify-content: center;
+  align-items:center;
+  background:none;
+  width: 150px;
+  height: 150px;
+  border:none;
+  position: relative;
+  margin: 0 auto;
+  text-decoration: none;
+  color:#fff;
+  flex-direction: column;
+}
+
+.play-img{
+  position: relative;
+  transform: translateX(5px);
+}
+.menu-link{
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 24px;
+}
+.social-link{
+  margin-right: 5px;
+  text-decoration: none;
+  flex-direction: column;
+}
+.social-link div{
+  margin-bottom: 50px;
+}
+.name{
+  font-size: 38px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+.main-title{
+  font-family: 'MasonChronicles', serif;
+  margin-right: auto;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 40px;
+  line-height: 40px;
+  animation-delay: 0.5s;
+}
+.main-description{
+  max-width: 450px;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top:47px;
+  margin-bottom: 47px;
+  animation-delay: 0.7s;
+}
+.button{
+  background: #FFE4E1;
+  border-radius: 8px;
+  color:#FFFFFF;
+  border: none;
+  padding:22px 72px;
+  text-decoration: none;
+  display:inline-block;
+  animation-delay: 1s;
+  color:black;
+}
+.button:active{
+  color:#FFFFFF;
+}
+.first-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.numberlink{
+  text-decoration: none;
+  color:#fff;
+}
+.second-content{
+  margin-top: 0px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 260px;
+  height: 173px;
+  border-radius: 8px;
+  padding: 13px;
+  margin-right: 30px;
+}
+.card-subtitle{
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 2px;
+}
+.card-title{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+.serias{
+  display: flex;
+  align-items:center;
+  margin: 0 auto;
+  margin-bottom: 160px;
+  position: relative;
+  max-width: 1100px;
+}
+.gallery img{
+  margin: 5px;
+  border:3px solid #fff;
+}
+a.photo:hover img{
+  border:3px solid  #d1567b;
+}
+.arrow{
+  width: 65px;
+  height: 70px;
+  border:none;
+  background-image: url(../img/SvgNavigation/arrow.svg);
+  background-repeat:no-repeat;
+  background-color: transparent;
+  background-position: center;
+  position: absolute;
+  top: 30%;
+  right: -65px;
+}
+h1{
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.arrowprev{
+  width: 65px;
+  height: 70px;
+  border:none;
+  background-image: url(../img/SvgNavigation/arrow.svg);
+  background-repeat:no-repeat;
+  background-color: transparent;
+  background-position: center;
+  position: absolute;
+  top: 30%;
+  left: -65px;
+  transform-origin: center center;
+  transform: rotate(180deg);
+}
+.swiper-container{
+  max-width: 1600px;
+  margin-left: 0;
+}
+.logofooter{
+  height: 100px;
+}
+.sociallink a{
+  margin-right: 25px;
+}
+.right div{
+  margin-bottom: 15px;
+}
+.footer{
+  background-color:#141218;
+  padding: 20px 0px;
+  margin-top: auto;
+}
+.footer-content{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.footer-link{
+  text-decoration: none;
+  color:#3A383D;
+  margin-left: 25px;
+}
+.copyright{
+  color:#3A383D;
+}
+.menu-btn{
+  display: none;
+}
+@media(max-width:760px){
+  .play{
+    display: none;
+  }
+  .footer-content{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .copyright{
+    display: block;
+    margin-bottom: 8px;
+  }
+  .footer-link:first-child{
+    margin-left: 0px;
+  }
+}
+@media(max-width:540px){
+  .menu-btn{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color:#FFFFFF;
+    right: 35px;
+    top: 40px;
+    position: absolute;
+    border:none;
+    cursor: pointer;
+  }
+  .menu-btn::before{
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color:#FFFFFF;
+    transition: transform 0.2s;
+    margin-top: -7px;
+  }
+  .menu-btn::after{
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color:#FFFFFF;
+    transition: transform 0.2s;
+    margin-top: 7px;
+  }
+  .header{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color:#902929;
+    right: 0;
+    top: 0;
+    width: 250px;
+    padding-bottom: 40px;
+  }
+  .header-active{
+    display: flex;
+    z-index: 1;
+  }
+  .menu-btn-active{
+    height: 0;
+    z-index: 99;
+  }
+  .menu-btn-active::before{
+    transform: rotate(45deg);
+    margin-top: 0;
+  }
+  .menu-btn-active::after{
+    transform: rotate(-45deg);
+    margin-top: 0;
+  }
+  .menu-list{
+    margin: auto;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  .menu-link{
+    margin-right: 0;
+    margin-bottom: 17px;
+  }
+  .social{
+    order: 1;
+    margin-bottom: 22px;
+  }
+  .social-link:first-child{
+    margin-left: 0;
+  }
+  .swiper-container{
+    width: 80%;
+  }
+  .logo{
+    margin-bottom: 25px;
+  }
+  .main-content{
+    margin-top: 196px;
+  }
+  .main-title{
+    font-size: 56px;
+  }
+  .serias{
+    width: 50%;
+  }
+}
