@@ -1,17 +1,19 @@
-var mySwiper = new Swiper('.swiper-container', {
-  slidesPerView:1,
-  loop:true,
-  navigation:{
-    nextEl:'.arrow',
-    prevEl:'.arrowprev'
-  },
-  breakpoints: {
-      // when window width is >= 640px
-      540: {
-        slidesPerView: 3
+for(var i=1; i<6;i++)
+{
+  var mySwiper = new Swiper('.swip'+i,{
+    slidesPerView:1,
+    loop:true,
+    navigation:{
+      nextEl:'.arrowswip'+i,
+      prevEl:'.arrowprevswip'+i,
+    },
+    breakpoints: {
+      540:{
+        slidesPerView:3
       }
-  }
-}); 
+    }
+  });
+}
 var menubtn = document.querySelector('.menu-btn');
 var menu = document.querySelector('.header');
 menubtn.addEventListener('click', function(){
