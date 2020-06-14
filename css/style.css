@@ -211,6 +211,11 @@ h1{
   max-width: 1600px;
   margin-left: 0;
 }
+.photoimg{
+  width: 260px;
+  height: 150px;
+  object-fit: cover;
+}
 .logofooter{
   height: 100px;
 }
