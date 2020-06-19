@@ -8,14 +8,32 @@ for(var i=1; i<6;i++)
       prevEl:'.arrowprevswip'+i,
     },
     breakpoints: {
-      540:{
+      640:{
+        slidesPerView:2
+      },
+      720:{
+        slidesPerView:2
+      },
+      768:{
+        slidesPerView:2
+      },
+      840:{
+        slidesPerView:2
+      },
+      960:{
         slidesPerView:3
+      },
+      1200:{
+        slidesPerView:3
+      },
+      1600:{
+        slidesPerView:4
       }
     }
   });
 }
 var menubtn = document.querySelector('.menu-btn');
-var menu = document.querySelector('.header');
+var menu = document.querySelector('.numberlink');
 menubtn.addEventListener('click', function(){
   menubtn.classList.toggle('menu-btn-active');
   menu.classList.toggle('header-active');
